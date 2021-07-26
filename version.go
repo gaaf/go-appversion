@@ -16,7 +16,7 @@ var (
 
 // String formats the application's version and build date and returns the result as a string
 func String() string {
-	return fmt.Sprintf("%s %s (build with %s at %s)", path.Base(os.Args[0]), Version, runtime.Version(), BuildDate)
+	return fmt.Sprintf("%s %s (built with %s at %s)", path.Base(os.Args[0]), Version, runtime.Version(), BuildDate)
 }
 
 // Print formats the application's version and build date and prints the result
